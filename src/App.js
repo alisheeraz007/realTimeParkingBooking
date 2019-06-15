@@ -36,6 +36,13 @@ class App extends Component {
             users,
           })
         }
+        if (snap.val().admin.locations) {
+          let location = Object.values(snap.val().admin.locations)
+          // console.log(location)
+          this.setState({
+            location,
+          })
+        }
       }
     })
   }

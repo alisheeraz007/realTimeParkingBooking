@@ -17,6 +17,7 @@ body{
     width: 100%;
     font-size: 30px;
     font-family: monospace;
+    color: #5080aa;
 }
 .inputDiv{
     position: absolute;
@@ -80,12 +81,15 @@ body{
 .inputDiv .abc{
     height: 100vh;
 }
+.dashBoard{
+    top: 10% !important;
+}
 .dataa{
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 22%;
     left: 50%;
-    transform: translate(-50%,-35%);
+    transform: translate(-50%,0%);
     text-align: center;
     background-color: white;
     max-width: 900px;
@@ -93,4 +97,130 @@ body{
 .dataa .data button{
     width: 33.3%;
     height: 30px;
+    border-radius: 5px;
+    background-color: #5080aa;
+    color: white;
+}
+.addLocation{
+    text-align: -webkit-center
+}
+.addLocation input{
+    display: block;
+    margin-top: 10px;
+    width: 70%;
+    max-width: 381px;
+    margin-bottom: 10px;
+}
+.viewLocation{
+    text-align: -webkit-center;
+    max-height: 445px;
+    overflow-y: scroll;
+}
+.viewLocation div{
+    width: 64%;
+    border: 1px solid #5080aa;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    max-width: 347px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-family: cursive;
+    color: #173e60;
+}
+.viewLocation input{
+    width: 44%;
+    height: 30px;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: #5080aa;
+    font-weight: bold;
+    margin: 5px;
+    border: none;
+}
+.viewLocation span{
+    float: left;
+    font-family: fantasy
+}
+.users{
+    text-align: -webkit-center;    
+}
+.users button{
+    width: 64%;
+    border: 1px solid skyblue;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    max-width: 347px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-family: cursive
+}
+.viewLocation .bookSlot {
+    width: 99% !important;
+}
+.viewSlots{
+    text-align: -webkit-center;
+    max-height: 445px;
+    overflow-y: scroll;
+    color: #5080aa
+}
+.slots{
+    width: 38%;
+    margin: 20px;
+    height: 52px;
+    background-color: #5080aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.bookaSlot{
+    font-size: 22px;
+    color: #5080aa;
+}
+.bookaSlot input{
+    width: 50%;
+    border: none;
+    background-color: #5080aa;
+    color: white;
+    padding: 5px;
+    padding-left: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 13px;
+    height: 28px;
+    font-size: 20px;
+}
+.bookaSlot select{
+    width: 26%;
+    border: none;
+    background-color: #5080aa;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 13px;
+    margin-left: 20px;
+    height: 38px;
+    font-size: 20px;
+    height: 38px;
+    text-align: -webkit-center;
+}
+.bookaSlot button{
+    width: 95%;
+    height: 39px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5080aa;
+    color: white;
+    max-width: 578px;
+}
+.abc{
+    background-color: white
 }

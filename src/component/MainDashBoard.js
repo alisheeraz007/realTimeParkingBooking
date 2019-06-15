@@ -84,7 +84,7 @@ class MainDashBoard extends Component {
                             )
                         }) ?
                         <div>
-                            <div className="header">
+                            <div className="header dashBoard">
                                 {this.props.state.admin ?
                                     this.props.location.state.email === this.props.state.admin.email ?
                                         'Admin Pannel Page'
