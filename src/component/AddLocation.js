@@ -44,9 +44,14 @@ class AddLocation extends Component {
         for (let i = 0; i < obj.slots; i++) {
             let obj2 = {
                 booked: "no",
-                slotNo: i + 1
+                slotNo: "slotNo" + (i + 1),
+                slot: 'slotNo' + (i + 1),
+                from: "",
+                to: "",
+                email:""
             }
             firebase.database().ref().child('wholeData').child('admin').child('locations').child(obj.exactLocation).child('slotsDetails').child(`slot${i + 1}`).set(obj2)
+            // firebase.database().ref().child('wholeData').child('admin').child('locations').child(obj.exactLocation).child('slotsDetails').child(`slot${i + 1}`).child('bookingDetails').set(obj2)
         }
     }
 

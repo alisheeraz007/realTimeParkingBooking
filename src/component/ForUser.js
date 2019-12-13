@@ -5,6 +5,7 @@ import 'firebase/auth';
 import 'firebase/database';
 
 import BookSlot from './BookSlot'
+// import EditBooking from './EditBooking'
 import BookaSlot from './BookaSlot'
 import AvailableSlots from './AvailableSlots'
 
@@ -61,13 +62,16 @@ class ForUser extends Component {
         })
     }
 
-    availableSlots = () => {
+    availableSlots = (from,to,date) => {
         this.setState({
             BookSlot: false,
             EditBooking: false,
             BookingHistory: false,
             BookaSlot: false,
-            AvailableSlots: true
+            AvailableSlots: true,
+            from,
+            to,
+            date
         })
     }
 
@@ -92,6 +96,13 @@ class ForUser extends Component {
                                             email={this.props.email}
                                         />
                                         : null}
+                                        {/* {this.state.EditBooking ?
+                                        <EditBooking
+                                            bookaSlot={this.bookaSlot}
+                                            state={this.props.state}
+                                            email={this.props.email}
+                                        />
+                                        : null} */}
                                     {/* {this.state.AddLocation ?
                                         <EditBooking
                                             state={this.props.state}
@@ -118,6 +129,7 @@ class ForUser extends Component {
                                             exactLocation={this.state.exactLocation}
                                             state={this.props.state}
                                             email={this.props.email}
+                                            state1={this.state}
                                         />
                                         : null}
                                 </div>

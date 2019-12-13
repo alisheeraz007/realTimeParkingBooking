@@ -26,7 +26,7 @@ class BookaSlot extends Component {
 
     availableSlots=(ev)=>{
         ev.preventDefault();
-        this.props.availableSlots()
+        this.props.availableSlots(this.state.from,this.state.to,this.state.date)
     }
 
     render() {
